@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.register.RegisterActivity">
+
+    <com.example.kotlinbase.utils.CustomVideoView
+        android:id="@+id/videoview_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/tv_rehister_splendid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="登录后更精彩"
+            android:textColor="#fff"
+            android:textSize="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:background="@drawable/shape_white_lucency_bk_10"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:id="@+id/ll_register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register_phone_login"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30">
+
+            <TextView
+                android:text="+86"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_20"
+                android:gravity="center"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                />
+
+            <EditText
+                android:id="@+id/et_register_phone"
+                android:paddingLeft="@dimen/dp_4"
+                android:textSize="@dimen/dp_18"
+                android:digits="1234567890"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="请输入手机号"
+                android:background="@null"
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_rehister_phone_local"
+            android:text="+86  182****1170"
+            android:textSize="@dimen/dp_20"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register_phone_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_register_phone_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rehister_splendid"
+            android:layout_marginTop="@dimen/dp_115"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:background="@drawable/icon_wow_pay_send_button_normal"
+            android:text="本机号码一键登录"
+            android:textColor="#fff"
+            android:textSize="@dimen/dp_16" />
+
+        <TextView
+            android:id="@+id/tv_rehister_else"
+            android:text="其他号码登录"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/dp_12"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register_phone_login"
+            android:layout_marginTop="@dimen/dp_10"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <com.sprout.ui.register.VerifyCodeView
+            android:visibility="gone"
+            android:id="@+id/verify_code_view_register"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rehister_else"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="其他方式登录"
+            android:textColor="#A19D9D"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@id/ll_images"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/ll_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@id/tv_register_text">
+
+            <ImageView
+                android:id="@+id/iv_register_wb"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@drawable/selectr_lregister_img_wb" />
+
+            <ImageView
+                android:id="@+id/iv_register_wx"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/selectr_lregister_img_wechat" />
+
+            <ImageView
+                android:id="@+id/iv_register_qq"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/selectr_lregister_img_qq" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_register_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="登录表示您已阅读并同意 用户协议 | 隐私条款"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

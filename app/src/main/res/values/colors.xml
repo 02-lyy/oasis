@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="green_home">#80A55F</color>
+    <color name="gray">#80CFC5C5</color>
+
+    <!--透明-->
+    <color name="white_lucency">#80FFFFFF</color>
+    <color name="green_lucency">#8080A55F</color>
+
+    <!--验证码-->
+    <color name="transparent">#00000000</color>
+    <color name="translucent_white">#ddd</color>
+
+</resources>

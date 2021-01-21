@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">绿洲</string>
+
+    <string name="wb">点击了微博登录</string>
+    <string name="wc">点击了微信登录</string>
+    <string name="qq">点击了qq登录</string>
+    <string name="register_phone">请输入手机号</string>
+    <string name="register_phone_code">手机号格式有误,请检查后重新输入</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
